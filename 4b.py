@@ -39,7 +39,7 @@ else:
 print("\n")
 print("="*60)
 print("From,")
-print(f"{name}\nhouse_no{house_no}\n{city}\n{district}\n{state}\n{pincode}")
+print(f"{name}\nhouse_no{house_no}\n{city}\n{district}\n{state}\n{pincode}\n")
 print("To,")
 print(to_address)
 print(salutation)

@@ -1,7 +1,6 @@
 import textwrap
 from datetime import date
 date=date.today()
-place="gokak"
 lucky_prisoners1=[]
 unlucky_prisoners1=[]
 with open(r"D:\coding\python\lucky_prisoners1.txt","r") as file:
@@ -24,7 +23,6 @@ print("select to whom you want to write letter")
 print("1- to prime minister of india \n 2- to jailer of andaman prison")
 choice=input("enter your choice:")
 if choice == "1":
-
       to_address="""Prime minister of india\nSouth Block,Raisina Hill\nNew Delhi-110011\nIndia\n """
       salutation="Respected Sir,"
       subject="list of lucky prisoners releasing today."+str(date)+"."
@@ -42,14 +40,14 @@ print("\n")
 print("="*60)
 print("From,")
 print(f"{name}\nhouse_no{house_no}\n{city}\n{district}\n{state}\n{pincode}")
-print("To,\n")
+print("To,")
 print(to_address)
 print(salutation)
 print("\n\t\tsubject :",subject)
 print()
 print(body)
 print(f"\ndate :{date}{'yours faithfully,':>40}")
-print(f"place:{place}{name:>46}")
+print(f"place:{city}{name:>46}")
 print("="*60)
 
 

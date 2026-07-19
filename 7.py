@@ -1,2 +1,11 @@
-for i in range(0,12,1):
-    print(90+i*30-i*2.5)
+names=[]
+english=[]
+f1=open("marks6.txt","r")
+for i in range(0,26,1):
+    s1=f1.readline()
+    list1=s1.split(",")
+    names.append(list1[0])
+    list2=list1[3].split(":")
+    english.append(list2[1])
+print(names)
+print(english)
